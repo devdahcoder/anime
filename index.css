@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 38.48854px;
+  font-weight: 400;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0;
+  position: relative;
+}
+
+header .logo {
+  cursor: pointer;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul .search-box {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 70%;
+  top: 50%;
+}
+
+header nav ul .search-box::before {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  line-height: 50px;
+  color: #006990;
+}
+
+header nav ul .search-box .search-btn {
+  position: absolute;
+  right: 45px;
+  top: 15px;
+  line-height: 50px;
+}
+
+header nav ul .search-box input {
+  height: 50px;
+  width: 50px;
+  border-radius: 40px;
+  border: 0px;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  padding: 0px 50px 0px 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+header nav ul .search-box input:focus {
+  width: 200px;
+  padding-left: 20px;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li img {
+  vertical-align: middle;
+}
+
+header nav ul li a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #1e234b;
+  font-size: 18.04151px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+header .header-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-time .header-date {
+  margin-left: 10px;
+}
+
+header .header-time .header-date p {
+  font-size: 12.02767px;
+  font-weight: 400;
+}
+
+.banner-section {
+  line-height: 28.86641px;
+  background: -webkit-gradient(linear, right top, left top, from(#00CCFF), to(#00ACFF));
+  background: linear-gradient(270deg, #00CCFF, #00ACFF);
+}
+
+.banner-section .banner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-section .banner .banner-text {
+  color: #ffffff;
+}
+
+.banner-section .banner .banner-text div {
+  margin-bottom: 1em;
+}
+
+.banner-section .banner .banner-text button {
+  border: none;
+  font-size: 16.83874px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+
+.banner-section .banner .banner-text button img {
+  vertical-align: middle;
+}
+
+.banner-section .banner .banner-image img {
+  overflow: visible;
+  margin: -65px 8em 0px 0px;
+}
+
+.recommended-movie {
+  line-height: 28.86641px;
+}
+
+.recommended-movie .recommended-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3em 0px;
+}
+
+.recommended-movie .movie-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 20px;
+}
+
+.recommended-movie .movie-list figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 370px;
+  -webkit-box-shadow: 36px 62px 73px rgba(0, 0, 0, 0.16);
+          box-shadow: 36px 62px 73px rgba(0, 0, 0, 0.16);
+  -webkit-transition: 450ms;
+  transition: 450ms;
+}
+
+.recommended-movie .movie-list figure img:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  border-radius: 5px;
+}
+
+.more-movie {
+  line-height: 28.86641px;
+}
+
+.more-movie .movies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3em 0px;
+}
+
+.more-movie .movies nav {
+  margin-left: 50px;
+}
+
+.more-movie .movies nav ul {
+  list-style: none;
+}
+
+.more-movie .movies nav ul li {
+  display: inline-block;
+  padding: 0px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.more-movie .movies nav ul li a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #1e234b;
+  text-decoration: none;
+}
+
+.more-movie .more-movie-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.more-movie .more-movie-list .movie-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1em 0px;
+}
+
+.more-movie .more-movie-list .movie-display .movie-text {
+  margin: 1em 0px 4em 0px;
+  width: 65%;
+}
+
+.more-movie .more-movie-list .movie-display figure {
+  margin-right: 2em;
+  position: relative;
+}
+
+.more-movie .more-movie-list .movie-display figure .text {
+  position: absolute;
+  bottom: 20px;
+  color: #ffffff;
+}
+
+.more-movie .more-movie-list .movie-display figure .left-text {
+  left: 15px;
+  background-color: #0c0c0c;
+  padding: 0px 10px;
+}
+
+.more-movie .more-movie-list .movie-display figure .right-text {
+  right: 0;
+  background-color: rgba(12, 12, 12, 0.3);
+  padding: 0px 20px 0px 10px;
+}
+
+.more-movie .more-movie-list .movie-display figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 465px;
+  height: 265px;
+}
+/*# sourceMappingURL=index.css.map */
