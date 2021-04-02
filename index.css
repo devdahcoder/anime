@@ -1,13 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
+  line-height: 1.2;
 }
 
 .container {
@@ -21,15 +26,9 @@ h1 {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding: 30px 0;
   position: relative;
 }
@@ -44,8 +43,7 @@ header nav ul {
 
 header nav ul .search-box {
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   left: 70%;
   top: 50%;
 }
@@ -70,10 +68,9 @@ header nav ul .search-box input {
   width: 50px;
   border-radius: 40px;
   border: 0px;
-  -webkit-transition: 1.5s;
   transition: 1.5s;
   padding: 0px 50px 0px 0px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 header nav ul .search-box input:focus {
@@ -84,9 +81,7 @@ header nav ul .search-box input:focus {
 header nav ul li {
   display: inline-block;
   padding: 0px 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 header nav ul li img {
@@ -94,7 +89,6 @@ header nav ul li img {
 }
 
 header nav ul li a {
-  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   color: #1e234b;
   font-size: 18.04151px;
@@ -103,12 +97,8 @@ header nav ul li a {
 }
 
 header .header-time {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 header .header-time .header-date {
@@ -122,18 +112,13 @@ header .header-time .header-date p {
 
 .banner-section {
   line-height: 28.86641px;
-  background: -webkit-gradient(linear, right top, left top, from(#00CCFF), to(#00ACFF));
   background: linear-gradient(270deg, #00CCFF, #00ACFF);
 }
 
 .banner-section .banner {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
 }
 
 .banner-section .banner .banner-text {
@@ -151,7 +136,6 @@ header .header-time .header-date p {
   padding: 10px 20px;
   border-radius: 50px;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   outline: none;
 }
@@ -170,43 +154,29 @@ header .header-time .header-date p {
 }
 
 .recommended-movie .recommended-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding: 3em 0px;
 }
 
 .recommended-movie .movie-list {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
   grid-gap: 20px;
 }
 
 .recommended-movie .movie-list figure img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 370px;
-  -webkit-box-shadow: 36px 62px 73px rgba(0, 0, 0, 0.16);
-          box-shadow: 36px 62px 73px rgba(0, 0, 0, 0.16);
-  -webkit-transition: 450ms;
+  box-shadow: 36px 62px 73px rgba(0, 0, 0, 0.16);
   transition: 450ms;
 }
 
 .recommended-movie .movie-list figure img:hover {
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
+  transform: scale(1.08);
   border-radius: 5px;
 }
 
@@ -215,15 +185,9 @@ header .header-time .header-date p {
 }
 
 .more-movie .movies {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   padding: 3em 0px;
 }
 
@@ -238,35 +202,23 @@ header .header-time .header-date p {
 .more-movie .movies nav ul li {
   display: inline-block;
   padding: 0px 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .more-movie .movies nav ul li a {
-  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   color: #1e234b;
   text-decoration: none;
 }
 
 .more-movie .more-movie-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .more-movie .more-movie-list .movie-display {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 1em 0px;
 }
 
@@ -299,8 +251,7 @@ header .header-time .header-date p {
 }
 
 .more-movie .more-movie-list .movie-display figure img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 465px;
   height: 265px;
 }
